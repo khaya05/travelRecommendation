@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <script src="./src/travel_recommendation.js" defer></script>
+    <title>Fast Travel</title>
+  </head>
+
+  <body>
+    <nav>
+      <p class="logo">Fast Travel</p>
+      <ul class="nav-links">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="./src/about_us.html">About Us</a>
+        </li>
+        <li>
+          <a href="./src/contact_us.html">Contact us</a>
+        </li>
+      </ul>
+
+      <div class="search-container">
+        <input
+          type="text"
+          placeholder="Enter destination"
+          class="destination"
+        />
+        <button id="search" class="interactive">Search</button>
+        <button id="close" class="interactive">Close</button>
+      </div>
+    </nav>
+    <div class="overlay"></div>
+    <div class="second-overlay hidden"></div>
+
+    <header>
+      <div class="floating-element">✈️</div>
+      <div class="floating-element">🌍</div>
+      <div class="floating-element">🏖️</div>
+
+      <h1>Discover Your Next Adventure</h1>
+      <p>
+        Uncover the world's hidden gems with personalized travel recommendations
+        tailored to your tastes. Whether you're a thrill-seeker, culture lover,
+        or beach bum, our site matches you with unforgettable destinations,
+        experiences, and insider tips—so you can travel smarter and explore
+        deeper. Let your next journey begin here.
+      </p>
+      <button class="interactive">Get Started</button>
+    </header>
+    <main id="destinations" class="hidden">
+      <p class="hidden">No destinations found</p>
+    </main>
+  </body>
+</html>
